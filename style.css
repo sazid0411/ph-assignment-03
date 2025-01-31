@@ -1,0 +1,14 @@
+/* Custom Font */
+.adlam-font {
+    font-family: "ADLaM Display", serif;
+}
+
+.sora-font {
+    font-family: "Sora", serif;
+}
+
+.banner{
+    /* background-image: url(./assets/cat-big.png); */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
