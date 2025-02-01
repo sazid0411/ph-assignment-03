@@ -16,6 +16,7 @@
 
     <!-- Font Awesome Icon -->
     <script src="https://kit.fontawesome.com/1b37f18062.js" crossorigin="anonymous"></script>
+
     <!-- Custom Tailwind CSS -->
     <script>
         tailwind.config = {
@@ -23,16 +24,16 @@
                 extend: {
                     keyframes: {
                         FadeInOut: {
-                            '0%': { opacity: '0' },
-                            '20%': { opacity: '.2' },
-                            '40%': { opacity: '.4' },
-                            '60%': { opacity: '.6' },
-                            '80%': { opacity: '.8' },
-                            '100%': { opacity: '1' }
+                            '0%': { opacity: '.0' },
+                            '25%': { opacity: '.5' },
+                            '50%': { opacity: '1' },
+                            '75%': { opacity: '.5' },
+                            '100%': { opacity: '0' },
+
                         }
                     },
                     animation: {
-                        'fade': 'FadeInOut 2s ease-in-out infinite',
+                        'fade': 'FadeInOut 2s ease-out infinite',
                     },
                     colors: {
                         clifford: '#da373d',
@@ -61,7 +62,7 @@
             <div class=" max-w[1320px] flex items-center justify-between py-5 px-5 lg:px-0 max-w-[1320px] mx-auto">
                 <div class="flex items-center justify-center ">
                     <img src="./assets/logo-header.png" alt="logo">
-                    <h1 class="hidden lg:block text-2xl">Browse<span class="text-primary">4</span>Pets</h1>
+                    <h1 class="hidden lg:block text-2xl">Browse<span class="text-primary">4</span>Pets.</h1>
                 </div>
                 <div class="hidden lg:block">
                     <ul class="flex items-center justify-center gap-8 text-xl ">
@@ -96,14 +97,13 @@
         <div class="max-w-[1320px] mx-auto lg:mt-16 lg:h-[750px] banner relative">
             <div class="p-4 lg:p-0 ">
                 <h1 class="adlam-font text-3xl lg:text-6xl mb-4 animate-fade">Pamper Your Pet, <br> Because They Deserve
-                    <br> the
-                    Best
+                    <br> the Best.
                 </h1>
                 <p class=" lg:text-xl mb-6 text-desc-text lg:w-[600px] animate-fade">Discover a world of treats, toys,
                     and essentials
                     handpicked for
                     your furry
-                    friends. Shop now and make tails wag with joy!</p>
+                    friends. Shop now and make tails wag with joy !</p>
                 <button class="btn bg-primary lg:text-xl hover:bg-hover ">Find a pet</button>
             </div>
             <img src="./assets/cat-big.png" alt="" class="absolute lg:right-12 -bottom-24 lg:bottom-10 -z-10 ">
@@ -180,8 +180,7 @@
             </div>
         </section>
 
-
-        <!-- Family -->
+        <!-- Extra Section -->
         <section class="pt-12 lg:pt-24 mb-12 lg:mb-[126px]">
             <div class="max-w-[1320px] mx-auto lg:space-y-10">
                 <h1 class="adlam-font text-2xl lg:text-4xl p-5 lg:p-0">Your Pet is <span
@@ -233,7 +232,7 @@
                     <div class="lg:max-w-[312px] bg-secondary-bg p-5 flex flex-col gap-5 rounded-xl">
                         <div>
                             <img src="assets/Frame (3).png" alt="">
-                        </div> 
+                        </div>
                         <div class="flex flex-col gap-3">
                             <h1 class="adlam-font text-2xl">
                                 Safe Environment
@@ -247,8 +246,6 @@
                 </div>
             </div>
         </section>
-
-
 
 
         <!-- Trending -->
@@ -441,7 +438,7 @@
 
     </main>
 
-
+    <!-- Footer And Floating Card -->
     <div class="relative">
 
         <!-- Floating Card -->
@@ -468,7 +465,6 @@
 
 
         <!-- Footer -->
-
         <footer
             class="footer p-5  pt-[360px] lg:pb-[144px] bg-footer text-base-content  flex flex-col lg:flex-row  lg:items-center justify-evenly">
 
@@ -497,11 +493,7 @@
             </nav>
 
         </footer>
-
     </div>
-    <!-- Footer  -->
-
-
 </body>
 
 </html>
