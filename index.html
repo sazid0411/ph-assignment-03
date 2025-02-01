@@ -21,6 +21,19 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    keyframes: {
+                        FadeInOut: {
+                            '0%': { opacity: '0' },
+                            '20%': { opacity: '.2' },
+                            '40%': { opacity: '.4' },
+                            '60%': { opacity: '.6' },
+                            '80%': { opacity: '.8' },
+                            '100%': { opacity: '1' }
+                        }
+                    },
+                    animation: {
+                        'fade': 'FadeInOut 2s ease-in-out infinite',
+                    },
                     colors: {
                         clifford: '#da373d',
                         'primary': '#FFDC26',
@@ -29,10 +42,11 @@
                         'desc-text': '#111111',
                         'card-bg': '#F9DF8A',
                         'footer': 'rgba(255, 220, 38, 0.5)'
-                    }
+                    },
                 }
             }
         }
+
     </script>
     <!-- Custom CSS link -->
     <link rel="stylesheet" href="style.css">
@@ -80,16 +94,19 @@
 
         <!-- Banner Section -->
         <div class="max-w-[1320px] mx-auto lg:mt-16 lg:h-[750px] banner relative">
-            <div class="p-4 lg:p-0">
-                <h1 class="adlam-font text-3xl lg:text-6xl mb-4">Pamper Your Pet, <br> Because They Deserve <br> the Bes
+            <div class="p-4 lg:p-0 ">
+                <h1 class="adlam-font text-3xl lg:text-6xl mb-4 animate-fade">Pamper Your Pet, <br> Because They Deserve
+                    <br> the
+                    Best
                 </h1>
-                <p class=" lg:text-xl mb-6 text-desc-text lg:w-[600px]">Discover a world of treats, toys, and essentials
+                <p class=" lg:text-xl mb-6 text-desc-text lg:w-[600px] animate-fade">Discover a world of treats, toys,
+                    and essentials
                     handpicked for
                     your furry
                     friends. Shop now and make tails wag with joy!</p>
                 <button class="btn bg-primary lg:text-xl hover:bg-hover ">Find a pet</button>
             </div>
-            <img src="./assets/cat-big.png" alt="" class="absolute lg:right-12 -bottom-24 lg:bottom-10 -z-10">
+            <img src="./assets/cat-big.png" alt="" class="absolute lg:right-12 -bottom-24 lg:bottom-10 -z-10 ">
         </div>
     </header>
 
@@ -162,6 +179,77 @@
 
             </div>
         </section>
+
+
+        <!-- Family -->
+        <section class="pt-12 lg:pt-24 mb-12 lg:mb-[126px]">
+            <div class="max-w-[1320px] mx-auto lg:space-y-10">
+                <h1 class="adlam-font text-2xl lg:text-4xl p-5 lg:p-0">Your Pet is <span
+                        class="text-primary">Safe</span> with us</h1>
+
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-6 p-5 lg:p-0">
+                    <div class="lg:max-w-[312px] bg-secondary-bg p-5 flex flex-col gap-5 rounded-xl">
+                        <div>
+                            <img src="assets/Frame.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h1 class="adlam-font text-2xl">
+                                Well-trained Staffs
+                            </h1>
+                            <p class="sora-font">
+                                Our staffs are fully trained in canine and feline first-aid.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="lg:max-w-[312px] bg-secondary-bg p-5 flex flex-col gap-5 rounded-xl">
+                        <div>
+                            <img src="assets/Frame (1).png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h1 class="adlam-font text-2xl">
+                                Squeaky-Toy Clean
+                            </h1>
+                            <p class="sora-font">
+                                We use only the safest cleaning products for use around animals
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="lg:max-w-[312px] bg-secondary-bg p-5 flex flex-col gap-5 rounded-xl">
+                        <div>
+                            <img src="assets/Frame (2).png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h1 class="adlam-font text-2xl">
+                                Monitor your Pup
+                            </h1>
+                            <p class="sora-font">
+                                Access our live webcam on your phones and laptops.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="lg:max-w-[312px] bg-secondary-bg p-5 flex flex-col gap-5 rounded-xl">
+                        <div>
+                            <img src="assets/Frame (3).png" alt="">
+                        </div> 
+                        <div class="flex flex-col gap-3">
+                            <h1 class="adlam-font text-2xl">
+                                Safe Environment
+                            </h1>
+                            <p class="sora-font">
+                                All boarding pets are healthy, spayed, neutered & vaccinated.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
 
         <!-- Trending -->
         <section class="bg-secondary-bg lg:pt-24 p-3">
@@ -367,7 +455,8 @@
                 <div class="w-3/5 flex flex-col items-center lg:items-start  justify-center gap-5">
                     <div class="space-y-2">
                         <h1 class="adlam-font text-xl lg:text-4xl text-center lg:text-start">Get Pawsome News!</h1>
-                        <p class="lg:text-xl sora-font text-center w-full">Exclusive training tips and tricks, products deals
+                        <p class="lg:text-xl sora-font text-center w-full">Exclusive training tips and tricks, products
+                            deals
                             and more.</p>
                     </div>
                     <input type="email" placeholder="Enter email "
